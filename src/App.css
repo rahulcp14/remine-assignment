@@ -1,38 +1,296 @@
-.App {
+/* Overall layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header section */
+.header-section {
+  background-color: green;
+  color: white;
+  padding: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-section h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-section form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header-section label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-section input {
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-section button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: green;
+  cursor: pointer;
+}
+
+.header-section button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Services section */
+.services-section {
+  background-color: white;
+  color: black;
+  padding: 50px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.services-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.services-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services-section li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Style for Benefits section */
+.benefits-section {
+  background-color: #f0f0f0;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.b-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.b-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.b-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.b-container li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Style for Testimonials section */
+.testimonials-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.testimonial .author {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style for Form section */
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0069d9;
+}
+
+/* Style for FAQ section */
+.faq-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-container h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.faq-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-container li {
+  margin-bottom: 20px;
+}
+
+.faq-container li:first-child {
+  margin-top: 20px;
+}
+
+.faq-container li.ques {
+  font-weight: bold;
+}
+
+/* Style for Contact section */
+.contact-section {
+  background-color: #007bff;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-section input {
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.contact-section textarea {
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.contact-section button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #000000;
+  color: #007bff;
 }
